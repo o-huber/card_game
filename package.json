@@ -1,0 +1,32 @@
+{
+  "name": "sos_end_geme_avengers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ucode.world:ucode/fullstack-endgame/vsteshenko.git"
+  },
+  "keywords": [],
+  "author": "vsteshenko, ohubernator, ysemeniuk",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.2",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.1.2"
+  },
+  "description": "End Game Project of students UCode IT Academy: vsteshenko, ohubernator, ysemeniuk",
+  "devDependencies": {}
+}

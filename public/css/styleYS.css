@@ -1,0 +1,379 @@
+html {
+  font-family: "Mate SC", serif;
+  height: 100%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+body.game {
+  margin-top: 0px;
+  /* background-image: url(../images/pocker_desc.jpg); */
+  background-image: url(../images/background_image.jpeg);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.block {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/marvel_back.jpg);
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.cardCount {
+  position: absolute;
+  left: 25px;
+  top: 180px;
+}
+.cardNumber {
+  float: right;
+}
+#countdown {
+  color: white;
+}
+.countdown {
+  position: fixed;
+  right: 150px;
+  top: 47%;
+  text-align: center;
+}
+#box {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 150px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+#root {
+  transition: 0.5s;
+}
+
+.battleField_1,
+.battleField_2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 120px;
+  height: 180px;
+  transition: 0.5s;
+  border: 2px solid black;
+  text-align: center;
+  margin: 5px;
+}
+
+.cardField_1,
+.cardField_2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 120px;
+  height: 180px;
+  transition: 0.5s;
+  border: 2px solid black;
+}
+
+.player_2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  position: relative;
+  margin: 0px auto;
+  width: 700px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.player_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative;
+  margin: 0px auto;
+  width: 700px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+#playingField {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 800px;
+  height: 750px;
+  transition: 0.5s;
+  padding: 0;
+}
+
+.game img {
+  width: 120px;
+  height: 135px;
+}
+
+.cost {
+  display: block;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  height: 20px;
+}
+
+.power {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  height: 21px;
+  color: white;
+}
+
+.attack {
+  border-radius: 5px;
+  background-color: red;
+  background-image: url(../images/sword.png);
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.defence {
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: yellow;
+  background-image: url(../images/shield.png);
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.active {
+  box-shadow: 0px 0px 20px 1px black;
+}
+
+.game .btn {
+  position: fixed;
+  right: 5px;
+  top: 47%;
+  z-index: 10;
+  transition: 0.5s;
+  display: flex;
+  justify-items: end;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  padding: 0.7em 1.5em;
+  border: 1px solid rgb(80, 32, 0);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(147, 80, 36)
+    linear-gradient(rgb(106, 58, 26), rgb(147, 80, 36) 80%);
+  box-shadow: 0 6px rgb(86, 38, 6), 0 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.game .btn:hover {
+  transition: 0.5s;
+  background: rgb(167, 91, 41)
+    linear-gradient(rgb(126, 69, 31), rgb(167, 91, 41) 80%);
+}
+
+.game .btn:active {
+  transition: 0.5s;
+  background: rgb(120, 63, 25)
+    linear-gradient(rgb(120, 63, 25) 20%, rgb(167, 91, 41));
+  box-shadow: 0 2px rgb(86, 38, 6), 0 1px 6px rgba(0, 0, 0, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+/* menuBAR */
+.menuBar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 30px;
+  top: -5px;
+  right: -5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.menuBar a:hover {
+  color: red;
+  transition: 0.8s;
+}
+.menuBar a {
+  margin-left: 12px;
+  color: black;
+}
+
+/* flip */
+#coin {
+  z-index: 10;
+  position: absolute;
+  top: 320px;
+  left: 50px;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#coin div {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
+    0 12px 20px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
+    0 12px 20px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 45px rgba(255, 255, 255, 0.3),
+    0 12px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
+.side-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.side-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: blue;
+}
+
+#coin {
+  transition: -webkit-transform 1s ease-in;
+  -webkit-transform-style: preserve-3d;
+}
+
+#coin div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+.side-a {
+  z-index: 100;
+}
+
+.side-b {
+  -webkit-transform: rotateY(-180deg);
+}
+
+#coin.heads {
+  animation: flipHeads 3s ease-out forwards;
+}
+
+#coin.tails {
+  animation: flipTails 3s ease-out forwards;
+}
+
+@-webkit-keyframes flipHeads {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1800deg);
+  }
+}
+
+@-webkit-keyframes flipTails {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1980deg);
+  }
+}
+
+/* playerAvatar_1 */
+.pl_1 {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: azure;
+}
+/* playerAvatar_2 */
+.pl_2 {
+  position: fixed;
+  right: 5px;
+  top: 40px;
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: azure;
+}
+.login2 {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  color: rgb(146, 45, 45);
+  font-weight: 900;
+  font-size: x-large;
+  text-transform: uppercase;
+  margin-top: 145px;
+}
+
+.login1 {
+  top: 730px;
+  right: 20px;
+  color: rgb(146, 45, 45);
+  font-weight: 900;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+.life-enemy,
+.life-iam{
+  margin-right: 1px;
+  margin-left: 170px;
+}
+
+.health {
+  transition: 1s;
+  width: 100%;
+  height: 30px;
+}
+.game-box{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}

@@ -1,0 +1,183 @@
+nav {
+  background-color: #563d7c;
+  color: #fff;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav h4 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+nav h4 a:hover {
+  color: yellow;
+}
+nav li a:hover {
+  color: yellow;
+}
+
+/* .mt-4{
+    background-color: red;
+} */
+html {
+  font-family: "Mate SC", serif;
+  margin: 0;
+  /*background-image: url(https://searchthisweb.com/wallpaper/thumb1000/main1000_supervillains_4096x2160_yarxb.png);*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  height: 100%;
+}
+.container {
+  margin: 80px auto;
+  width: 600px;
+  /*height: 700px;*/
+}
+body.index {
+  /*background-image: url(https://searchthisweb.com/wallpaper/thumb1000/main1000_supervillains_4096x2160_yarxb.png);*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*background-color: #000000;*/
+}
+#menu-box {
+  width: 600px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightblue; */
+  border-radius: 20px;
+}
+#menu-box a {
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  border: 2px solid white;
+  border-left: unset;
+  border-right: unset;
+  border-top: unset;
+  text-align: center;
+  font-size: xx-large;
+  cursor: pointer;
+  /* background-color: rgb(43, 43, 156); */
+}
+#menu-box a:hover {
+  border: 2px solid rgb(201, 118, 24);
+  border-left: unset;
+  border-right: unset;
+  border-top: unset;
+}
+.active {
+  background-color: rgb(201, 118, 24);
+}
+a {
+  text-decoration: none;
+  color: rgb(36, 161, 63);
+}
+
+.form-control {
+  border-radius: 25px;
+}
+.modal-w {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  /*display: none;*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__dialog {
+  max-width: 500px;
+  margin: 40px auto;
+}
+.modal__content {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.render {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #000;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal__close:hover{
+  color: red;
+}
+#startgamebutton{
+  border-radius: 5px;
+  margin-top: 50px;
+  background-color: rgb(17, 16, 16);
+  width: 200px;
+  height: 70px;
+  border: none;
+  text-decoration: unset;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#startgamebutton:hover{
+  background-color: rgb(148, 37, 37);
+  box-shadow: 0 0 10px rgb(148, 37, 37);
+}
+#render-start-w{
+  text-align: center;
+  background-color: rgb(138, 138, 138);
+}
+.copy-text{
+  cursor: pointer;
+}
+.par-copy{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.battle-gif {
+  z-index: 1000;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
